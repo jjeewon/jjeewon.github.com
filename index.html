@@ -1,35 +1,23 @@
 ---
 layout: default
 ---
-2015136038김지원입니다.
- 여행 다니는 것을 좋아하는 대학생입니다.
-작년 여름방학엔 혼자 독일,벨기에,헝가리,베트남을 갔다왔고 겨울방학엔 혼자 라오스, 태국을 갔다왔고
-이번 여름방학엔 베프 2명이랑 영국, 프랑스, 독일, 스페인, 이탈리아를 갈 예정입니다. 지금 너무 설레입니다ㅎㅎ
- 언어 공부하는 것도 좋아합니다.
-1학년 때 아랍어 조금 배우다가 때려쳤고 독일어는 지금까지 쭈욱 공부하는 중입니다.하하하하
- 전공 공부하는 것도 좋아합니다. 교수님들도 너무 좋고 조교님들도 착하셔서 배울 맛이 납니다. 내용도 재밌습니다. 특히 디지털 공학이 재밌는데 점점 어려져서 싫어질 것 같기도 합니다.
-소개 끄읕!
+
 <div class="home">
-  <h1 class="page-heading">Posts</h1>
+
+  <h1 class="page-heading">Meeting</h1>
+
   <ul class="post-list">
-    {% for post in paginator.posts %}
+    {% for post in site.posts %}
       <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <p class="description">
-            {% if post.description %}
-                {{ post.description | strip_html | strip_newlines | truncate: 250 }}
-            {% else %}
-                {{ post.content | strip_html | strip_newlines | truncate: 250 }}
-            {% endif %}</p>
       </li>
     {% endfor %}
   </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
 </div>
-{% if paginator.total_pages > 1 %}<!-- Pagination links -->
-  <div class="pagination">
-    {% if paginator.previous_page %} <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="prev">Newer Posts</a> {% endif %}
-    {% if paginator.next_page %} <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">Older Posts</a>{% endif %}
-  </div>{% endif %}

@@ -4,12 +4,15 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+##**YuGyung**
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+안녕하세요. 저는 한유경입니다. 
+저는 한국기술교육대학교 컴퓨터 공학과에 진학 중입니다. 좋아하는 음식은 삼겹살이고, 싫어하는 음식은 매운음식입니다.
+지금은 손짓나눔 동아리 공연 준비를 한창 하고 있습니다.
+공연 날짜는 5월25일입니다. 장소는 대강당입니다. 많이 보러와 주세요!
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+팀원 :
+2012136066 손현곤
+2014136141 송원섭
+2015136038 김지원
+2015136137 한유경
